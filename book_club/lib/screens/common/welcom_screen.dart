@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ContactScreen extends StatelessWidget {
+class FirstWelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("All Contact"),
+      body: Container(
+        child: Text("Hello, welcome"),
       ),
     );
   }
