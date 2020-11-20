@@ -1,4 +1,5 @@
 import 'package:book_club/screens/forgot_screen.dart';
+import 'package:book_club/screens/math_book/intrestCalculator_Screen.dart';
 import 'package:book_club/screens/signup/signup_screen.dart';
 import 'package:book_club/widgets/OurContainer.dart';
 import 'package:flutter/material.dart';
@@ -111,6 +112,27 @@ class _LoginFormState extends State<LoginForm> {
                 },
               ),
             ],
+          ),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+          InkWell(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Text(
+                "Not NOW Ask me letter",
+                style: TextStyle(
+                  color: Colors.green[200],
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => IntrestCalculatorScreen(),
+                ),
+              );
+            },
           ),
         ],
       ),

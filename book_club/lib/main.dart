@@ -1,7 +1,8 @@
+// import 'package:book_club/screens/login/login_screen.dart';
+import 'package:book_club/screens/math_book/intrestCalculator_Screen.dart';
 import 'package:flutter/material.dart';
-import 'screens/signup/signup_screen.dart';
+// import 'screens/signup/signup_screen.dart';
 import 'utils/theme.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 void main() {
   runApp(
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Contact details Google',
       theme: OurAppTheme().buildTheme(),
-      home: SignupScreen(),
+      home: IntrestCalculatorScreen(),
       // routes: {
       //   '/login': (_) => LoginScreen(),
       //   '/signup': (_) => SignupScreen(),

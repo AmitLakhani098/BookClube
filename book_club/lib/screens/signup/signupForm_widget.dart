@@ -1,5 +1,7 @@
+import 'package:book_club/screens/common/custom_button_widgets.dart';
 import 'package:book_club/screens/login/login_screen.dart';
 import 'package:book_club/widgets/OurContainer.dart';
+import 'package:book_club/widgets/Signin_button.dart';
 import 'package:flutter/material.dart';
 
 class SignupForm extends StatefulWidget {
@@ -117,31 +119,35 @@ class _SignupFormState extends State<SignupForm> {
               ),
             ],
           ),
-          Column(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              SizedBox(height: 10),
-              RaisedButton(
-                onPressed: () {},
-                child: Text(
-                  "Lohin with Google",
+          Container(
+            height: 150,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                CustomButtonTextAndIcon(
+                  color: Colors.white,
+                  splashColor: Colors.black12,
+                  onPressed: () {},
+                  child: Text(
+                    "Google Signup",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      letterSpacing: 1.1,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-              ),
-              SizedBox(height: 10),
-              RaisedButton(
-                onPressed: () {},
-                child: Text("Lohin with Google"),
-              ),
-              SizedBox(height: 10),
-              RaisedButton(
-                onPressed: () {},
-                child: Text("Lohin with Google"),
-              ),
-              SizedBox(height: 10),
-            ],
-          )
+                SocialMediaButton(
+                  text: "Facebook Signup",
+                  textColor: Colors.white,
+                  onPressed: () {},
+                  color: Colors.blue[600],
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

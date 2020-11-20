@@ -32,20 +32,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   margin: EdgeInsets.symmetric(horizontal: 15),
                   child: LoginForm(),
                 ),
-                // Container(
-                //   child: Center(
-                //     child: Text(
-                //       "Welcome to Book Club",
-                //       style: TextStyle(
-                //         color: Colors.black,
-                //         fontSize: 30,
-                //         fontWeight: FontWeight.bold,
-                //         wordSpacing: 2.5,
-                //       ),
-                //     ),
-                //   ),
-                // ),
-                // SizedBox(height: MediaQuery.of(context).size.height * 0.025),
               ],
             ),
           )
